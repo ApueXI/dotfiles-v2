@@ -1,0 +1,80 @@
+export MOZ_ENABLE_WAYLAND=1
+
+# Ctrl + Left / Right arrow → move by word
+bindkey '^[[1;5D' backward-word
+bindkey '^[[1;5C' forward-word
+
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/cred/.zshrc'
+
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# Tab completion enhancements
+setopt AUTO_MENU
+setopt MENU_COMPLETE
+
+autoload -U colors && colors
+PROMPT='%F{yellow}%n@arch%f %F{blue}%~%f %# '
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias cls='clear'
+alias ff='fastfetch'
+alias fire='firefox'
+alias img='swayimg'
+
+# Can also use ip link
+alias nmd='nmcli device'
+alias nmdw='nmcli device wifi'
+alias nmdwl='nmcli device wifi list'
+alias nmdwr='nmcli device wifi rescan'
+alias nmdwconn='nmcli device wifi connect' # nmdwconn 'ssid' password 'psww' hidden yes
+
+alias avim="NVIM_APPNAME=nvim_acob nvim"
+alias kvim="NVIM_APPNAME=nvim_kick nvim"
+# alias kvim="NVIM_APPNAME=kick-nvim nvim"
+
+# Show sched
+alias schd="mdcat /home/cred/.sched/.sched.md"
+# alias schd="bat --style=plain --language=markdown --theme='Catppuccin Latte' /home/cred/sched.md"
+
+# How to mount external hdd
+alias how_mnt="mdcat /home/cred/mount-nfts-hdd.md"
+
+# To Update mirror list
+alias reflector_scr='reflector --sort score --age 48 --ipv4 --protocol https --connection-timeout 15 --latest 20 --verbose --country Japan,Singapore,South_Korea,Philippines'
+alias reflector_spd='reflector --sort rate --age 48 --ipv4 --protocol https --connection-timeout 15 --latest 20 --verbose --country Japan,Singapore,South_Korea,Philippines'
+alias reflector_spd_save='reflector --sort rate --age 48 --ipv4 --protocol https --connection-timeout 15 --latest 20 --save /home/cred/mirrorlist.txt --verbose --country Japan,Singapore,South_Korea,Philippines'
+
+# Extract stuff into dedicated folder
+alias extract='7z x -o/home/cred/stuff-extracted'
+# Zip file/folder, give the extact directory
+alias zip='python /home/cred/zipping.py'
+
+# Copy to clipboard the current directory
+alias c_pwd='pwd | wl-copy'
+
+# See packages and put them in a .txt file
+alias list_packages='pacman -Qen > /home/cred/list-packages/pacman-packages.txt;
+                      pacman -Qn > /home/cred/list-packages/pacman-packages-dependencies.txt;
+                      pacman -Qem > /home/cred/list-packages/aur-packages.txt
+                      pacman -Qm > /home/cred/list-packages/aur-packages-dependencies.txt'
+
+export EDITOR=nvim
+function y() {
+  local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+  command yazi "$@" --cwd-file="$tmp"
+  IFS= read -r -d '' cwd <"$tmp"
+  [ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+  rm -f -- "$tmp"
+}
+
+export PATH="$PATH:/home/cred/.dotnet/tools"

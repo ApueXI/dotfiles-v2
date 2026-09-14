@@ -1,0 +1,23 @@
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Colors
+ *
+ * Available Colors Schemes
+ *
+ * adapta    catppuccin    everforest    navy       paper
+ * arc       cyberpunk     gruvbox       nord       solarized
+ * black     dracula       lovelace      onedark    yousai
+ *
+ **/
+
+/**
+* adapta.rasi  black.rasi       cyberpunk.rasi  everforest.rasi  lovelace.rasi  nord.rasi     paper.rasi      tokyonight.rasi
+* arc.rasi     catppuccin.rasi  dracula.rasi    gruvbox.rasi     navy.rasi      onedark.rasi  solarized.rasi  yousai.rasi
+**/
+
+/* Import color-scheme from `colors` directory */
+
+@import "~/.config/rofi/colors/catppuccin.rasi"

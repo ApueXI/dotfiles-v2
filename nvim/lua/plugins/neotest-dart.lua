@@ -1,0 +1,3 @@
+return {
+  "sidlatau/neotest-dart",
+}
