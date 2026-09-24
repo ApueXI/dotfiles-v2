@@ -1,0 +1,50 @@
+session_name: aisley
+start_directory: /home/cred/coding/aisley
+
+windows:
+  - window_name: vibe code
+    panes:
+      - shell_command:
+          - cmd: codex resume 01a042e3-d14d-79c3-850f-b16791422913
+            enter: false
+
+  - window_name: document
+    panes:
+      - shell_command:
+          - cmd: codex resume 01a04b8f-02b9-74f1-92d2-8369965babcb
+            enter: false
+
+  - window_name: QA
+    panes:
+      - shell_command:
+          - cmd: codex resume 01a090d9-fa14-75a1-9f26-09e3ca5e8ace
+            enter: false
+
+  - window_name: file manager
+    panes:
+      - shell_command:
+          - cmd: y
+            enter: false
+
+  - window_name: git
+    layout: main-vertical
+    options:
+      main-pane-width: 50%
+    panes:
+      - shell_command:
+          - cmd: git status
+        focus: true
+      - shell_command:
+          - cmd: git lgg
+      - shell_command:
+          - cmd: git branch
+
+  - window_name: run
+    layout: even-horizontal
+    panes:
+      - focus: true
+      - start_directory: /home/cred/coding/aisley/src/api
+
+  - window_name: misc
+    panes:
+      -

@@ -16,7 +16,6 @@ return {
       roslyn = {}, -- C# support
       sqlls = {},
       terraformls = {},
-      yamlls = {},
       dartls = {},
       tsserver = {
         enabled = false,
@@ -33,6 +32,7 @@ return {
       ruff = require("plugins.lsp-stuff.ruff"),
       ruff_lsp = require("plugins.lsp-stuff.ruff_lsp"),
       vtsls = require("plugins.lsp-stuff.vtsls"),
+      yamlls = require("plugins.lsp-stuff.yaml"),
       -- phpactor = {
       --   enabled = lsp == "phpactor",
       -- },

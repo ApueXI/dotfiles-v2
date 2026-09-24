@@ -1,0 +1,50 @@
+session_name: aisley-flutter
+start_directory: /home/cred/coding/aisley_app/
+
+windows:
+  - window_name: vibe code
+    panes:
+      - shell_command:
+          - cmd: codex resume 01a07ea4-4089-72f0-a0ee-bbfe90410512
+            enter: false
+
+  - window_name: document
+    panes:
+      - shell_command:
+          - cmd: codex resume 01a07e49-3844-70b2-b92d-5fcf1cc8edea
+            enter: false
+
+  - window_name: QA
+    panes:
+      - shell_command:
+          - cmd: codex resume 01a09387-ac62-73f3-ab31-a2ed2d23ee9e
+            enter: false
+
+  - window_name: file manager
+    panes:
+      - shell_command:
+          - cmd: y
+            enter: false
+
+  - window_name: git
+    layout: main-vertical
+    options:
+      main-pane-width: 50%
+    panes:
+      - shell_command:
+          - cmd: git status
+        focus: true
+      - shell_command:
+          - cmd: git lgg
+      - shell_command:
+          - cmd: git branch
+
+  - window_name: run
+    layout: even-horizontal
+    panes:
+      - focus: true
+      - start_directory: /home/cred/coding/aisley_app/android/
+
+  - window_name: misc
+    panes:
+      -
