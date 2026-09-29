@@ -1,8 +1,8 @@
-bruno-bin 4.1.0-1
-bruno-bin-debug 4.1.0-1
+bruno-bin 4.2.0-1
+bruno-bin-debug 4.2.0-1
 bruno-debug 3.2.0-1
 clipse-debug 1.2.1-1
-floorp-bin 12.18.1-1
+floorp-bin 12.19.0-1
 httpdirfs-debug 1.2.7-2
 httpfs2-2gbplus-debug 0.1.5-1
 lib32-audit 4.2.1-1
@@ -23,7 +23,7 @@ spotify 1:1.2.96.518-2
 swaylock-effects 1.8.1-1
 swaylock-effects-debug 1.8.1-1
 tty-clock-debug 2.3-2
-visual-studio-code-bin 1.139.1-1
+visual-studio-code-bin 1.140.0-1
 wlrobs-debug 1.2-3
 wlroots0.19 0.19.3-1
 yay 13.0.1-1

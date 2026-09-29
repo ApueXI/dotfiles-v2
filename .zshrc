@@ -72,7 +72,10 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  colored-man-pages
+  history-substring-search
   zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -147,6 +150,9 @@ alias pyzip='python /home/cred/python_scripts/zipping.py'
 
 # Generate python secrets
 alias gen_pysecrets='python /home/cred/python_scripts/gen_secrets.py'
+
+# Give random ln from /home/cred/Light_Novel
+alias random_ln="python /home/cred/python_scripts/random_ln.py"
 
 # Copy to clipboard the current directory
 alias cpwd='pwd | wl-copy'

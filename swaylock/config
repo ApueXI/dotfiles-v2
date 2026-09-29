@@ -1,5 +1,4 @@
-image=/home/cred/pictures/Huashi-wallpaper-1.jpg
-
+image=./Pictures/Huashi-wallpaper-3.jpg
 indicator
 indicator-radius=240
 indicator-thickness=20
@@ -9,7 +8,7 @@ clock
 timestr=%R
 datestr=%B %e
 
-effect-blur=20x2
+effect-blur=12x2
 #effect-greyscale
 effect-scale=0.3
 

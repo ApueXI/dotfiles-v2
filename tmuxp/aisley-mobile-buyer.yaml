@@ -1,0 +1,59 @@
+session_name: aisley-mobile-buyer
+start_directory: /home/cred/coding/aisley_mobile_buyer
+
+windows:
+  - window_name: vibe code
+    panes:
+      - shell_command:
+          - cmd: codex resume
+            enter: false
+
+  - window_name: document
+    panes:
+      - shell_command:
+          - cmd: codex resume
+            enter: false
+
+  - window_name: QA
+    panes:
+      - shell_command:
+          - cmd: codex resume
+            enter: false
+
+  - window_name: file manager
+    panes:
+      - shell_command:
+          - cmd: y
+            enter: false
+
+  - window_name: git
+    layout: even-horizontal
+    panes:
+      - shell_command:
+          - cmd: lazygit
+      #   focus: true
+      # - shell_command:
+      #     - cmd: git status
+
+  # - window_name: git
+  #   layout: main-vertical
+  #   options:
+  #     main-pane-width: 50%
+  #   panes:
+  #     - shell_command:
+  #         - cmd: git status
+  #       focus: true
+  #     - shell_command:
+  #         - cmd: git lgg
+  #     - shell_command:
+  #         - cmd: git branch
+
+  - window_name: run
+    layout: even-horizontal
+    panes:
+      - focus: true
+      - start_directory: /home/cred/coding/aisley_mobile_buyer/android/
+
+  - window_name: misc
+    panes:
+      -
