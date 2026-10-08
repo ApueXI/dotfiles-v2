@@ -6,12 +6,12 @@
     // "source": "arch3",
     // https://patorjk.com/software/taag/#p=testall&f=Bulbhead&t=GGM&x=none&v=4&h=4&w=80&we=false
     "type": "kitty",
-    "source": "/home/cred/.config/fastfetch/autofister.jpg",
+    "source": "/${HOME}/.config/fastfetch/autofister.jpg",
     "width": 40,
     "padding": {
       "left": 4,
-      "top": 1
-    }
+      "top": 1,
+    },
     // "color": {
     // "1": "green",
     // "2": "cyan"
@@ -21,108 +21,108 @@
   },
   "display": {
     "color": {
-      "separator": "blue"
+      "separator": "blue",
     },
     "separator": " | ",
     "constants": [
-      ">-----------<+>---------------------------------------------<"
-    ]
+      ">-----------<+>---------------------------------------------<",
+    ],
   },
   "modules": [
     {
       "type": "custom",
       "format": "{$1}",
-      "outputColor": "separator"
+      "outputColor": "separator",
     },
     {
       "type": "kernel",
       "key": "  GII MURIN ",
-      "keyColor": "bright_yellow"
+      "keyColor": "bright_yellow",
     },
     {
       "type": "custom",
       "format": "{$1}",
-      "outputColor": "separator"
+      "outputColor": "separator",
     },
     {
       "type": "uptime",
       "key": "   Uptime   ",
-      "keyColor": "blue"
+      "keyColor": "blue",
     },
     {
       "type": "shell",
       "key": "   Shell    ",
-      "keyColor": "blue"
+      "keyColor": "blue",
     },
     {
       "type": "terminal",
       "key": "   Terminal ",
-      "keyColor": "blue"
+      "keyColor": "blue",
     },
     {
       "type": "terminalfont",
       "key": "   Font     ",
-      "keyColor": "blue"
+      "keyColor": "blue",
     },
     {
       "type": "packages",
       "key": "   Packages ",
-      "keyColor": "blue"
+      "keyColor": "blue",
     },
     {
       "type": "localip",
       "key": "   Local IP ",
-      "keyColor": "blue"
+      "keyColor": "blue",
     },
     {
       "type": "custom",
       "format": "{$1}",
-      "outputColor": "separator"
+      "outputColor": "separator",
     },
     {
       "type": "display",
       "key": "   Display  ",
-      "keyColor": "cyan"
+      "keyColor": "cyan",
     },
     {
       "type": "cpu",
       "key": "   CPU      ",
-      "keyColor": "cyan"
+      "keyColor": "cyan",
     },
     {
       "type": "gpu",
       "key": "   GPU      ",
-      "keyColor": "cyan"
+      "keyColor": "cyan",
     },
     {
       "type": "memory",
       "key": "   RAM      ",
-      "keyColor": "cyan"
+      "keyColor": "cyan",
     },
     {
       "type": "swap",
       "key": "   SWAP     ",
-      "keyColor": "cyan"
+      "keyColor": "cyan",
     },
     {
       "type": "disk",
       "key": "   Disk     ",
-      "keyColor": "cyan"
+      "keyColor": "cyan",
     },
     {
       "type": "battery",
       "key": "   Battery  ",
-      "keyColor": "cyan"
+      "keyColor": "cyan",
     },
     {
       "type": "custom",
       "format": "{$1}",
-      "outputColor": "separator"
-    }
+      "outputColor": "separator",
+    },
     // "break",
     // {
     //   "type": "colors",
     //   "paddingLeft": 15
     // }
-  ]
+  ],
 }
