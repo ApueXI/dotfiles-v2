@@ -1,5 +1,6 @@
 session_name: aisley-mobile-buyer
-start_directory: /home/cred/coding/aisley_mobile_buyer
+start_directory: /home/cred/coding/aisley-workplace/aisley_mobile_buyer/
+# start_directory: /home/cred/coding/aisley_mobile_buyer
 
 windows:
   - window_name: vibe code
@@ -52,7 +53,7 @@ windows:
     layout: even-horizontal
     panes:
       - focus: true
-      - start_directory: /home/cred/coding/aisley_mobile_buyer/android/
+      - start_directory: /home/cred/coding/aisley-workplace/aisley_mobile_buyer/android/
 
   - window_name: misc
     panes:

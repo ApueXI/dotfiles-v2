@@ -2,7 +2,6 @@
 a52dec 0.8.0-3
 aalib 1.4rc5-19
 abseil-cpp 20260817.0-2
-accountsservice 26.27.3-1
 acl 2.4.0-1
 ada 4.0.0-1
 adwaita-cursors 51.0-1
@@ -15,7 +14,6 @@ alsa-plugins 1:1.2.12-6
 alsa-topology-conf 1.2.5.1-4
 alsa-ucm-conf 1.2.16.1-1
 aom 3.15.2-1
-appstream 1.2.1-1
 archlinux-keyring 20260909-1
 argon2 20190702-7
 asciidoctor 2.0.26-1
@@ -43,11 +41,10 @@ bluez 5.87-2
 bluez-libs 5.87-2
 boost-libs 1.92.0-1
 botan 3.13.0-1
-breezy 3.3.22-1
 brightnessctl 0.5.1-3
 brotli 1.2.0-1
 btop 1.4.7-1
-bubblewrap 0.13.0-1
+bubblewrap 0.13.1-1
 bzip2 1.0.8-6
 c-ares 1.34.8-1
 ca-certificates 20240618-1
@@ -71,9 +68,8 @@ clucene 2.3.3.4-17
 cmake 4.4.4-1
 cmatrix 2.0-4
 compiler-rt 23.1.1-1
-composefs 1.0.8-1
 composer 2.10.3-1
-containerd 2.4.1-1
+containerd 2.4.2-1
 coreutils 9.12-2
 cpio 2.15-3
 cppdap 1.58.0-3
@@ -98,7 +94,7 @@ default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.43-2
 diffutils 3.12-2
-discord 1:1.0.161-1
+discord 1:1.0.162-1
 dnsmasq 2.93-1
 docker 1:29.9.0-1
 docker-compose 5.6.0-1
@@ -121,7 +117,7 @@ edk2-ovmf 202608-1
 efibootmgr 18-4
 efivar 39-2
 electron39 39.8.10-2
-electron43 43.7.9-1
+electron43 43.7.11-1
 elfutils 0.196-1
 ell 0.83-1
 enchant 2.8.21-1
@@ -129,7 +125,7 @@ exempi 2.6.6-3
 exiv2 0.28.9-1
 expat 2.9.0-1
 fakeroot 1:1.37.2-3
-fastfetch 2.69.0-1
+fastfetch 2.70.0-1
 fd 10.5.0-3
 ffmpeg 2:9.0.2-2
 ffmpeg4.4 4.4.8-5
@@ -139,8 +135,6 @@ filesystem 2025.10.12-1
 findutils 4.11.0-1
 firefox 157.0.1-1
 flac 1.5.0-1
-flatpak 1:1.18.4-1
-flatpak-builder 1.4.12-1
 flex 2.6.4-6
 fmt 12.2.0-1
 foliate 3.3.0-3
@@ -238,7 +232,7 @@ hyphen 2.8.9-1
 iana-etc 20260617-1
 icu 78.3-1
 ijs 0.35-7
-imagemagick 7.1.2.33-1
+imagemagick 7.1.2.34-1
 imath 3.2.3-1
 imlib2 1.12.7-3
 iniparser 4.3.2-1
@@ -255,7 +249,7 @@ jansson 2.15.1-1
 java-environment-common 3-6
 java-runtime-common 3-6
 jbig2dec 0.20-2
-jbigkit 2.1-8
+jbigkit 2.2-1
 jdk-openjdk 27.u35-1
 jdk21-openjdk 21.0.12.1.u1-1
 jemalloc 1:5.4.0-1
@@ -375,7 +369,6 @@ libavif 1.4.2-1
 libayatana-appindicator 0.6.1-1
 libayatana-indicator 0.9.5-1
 libb2 0.98.1-3
-libblake3 1.8.7-1
 libblockdev 3.5.0-2
 libblockdev-crypto 3.5.0-2
 libblockdev-fs 3.5.0-2
@@ -405,7 +398,7 @@ libcloudproviders 0.4.1-1
 libcmis 0.6.3-2
 libcolord 1.4.8-1
 libcups 2:2.4.20-1
-libcupsfilters 2.2.1.r28.gce65eb74-1
+libcupsfilters 2.2.1.r32.gd49e9284-1
 libcurl-gnutls 8.22.0-1
 libdaemon 0.14-6
 libdatachannel 0.24.5-2
@@ -439,7 +432,6 @@ libffi 3.8.0-1
 libfontenc 1.1.9-1
 libfreeaptx 0.2.2-1
 libfreehand 0.1.4-1
-libfyaml 0.9.6-3
 libgcc 16.2.1+r23+gd564253eb6c8-1
 libgcrypt 1.12.4-1
 libgee 0.20.8-1
@@ -479,7 +471,6 @@ liblqr 0.4.3-1
 liblsan 16.2.1+r23+gd564253eb6c8-1
 libluv 1.52.1-1
 libmakepkg-dropins 20-2
-libmalcontent 0.14.0-4
 libmanette 0.2.13-2
 libmatio 1.5.30-1
 libmd 1.3.0-1
@@ -494,7 +485,7 @@ libmspub 0.1.5-1
 libmtp 1.1.23-1
 libmwaw 0.3.23-1
 libmysofa 1.3.5-1
-libnbd 1.24.3-1
+libnbd 1.24.4-1
 libndp 1.9-1
 libnet 2:1.3-2
 libnetfilter_conntrack 1.1.1-1
@@ -545,7 +536,7 @@ libraw 0.22.2-1
 libraw1394 2.1.2-4
 libreoffice-fresh 26.8.1-1
 librevenge 0.0.6-1
-librewolf 157.0.1_1-1
+librewolf 158.0.0_1-1
 librsvg 2:2.63.2-1
 librsync 1:2.3.4-2
 libsamplerate 0.2.2-3
@@ -574,7 +565,7 @@ libtatsu 1.0.5-1
 libteam 1.32-3
 libthai 0.1.30-1
 libtheora 1.2.0-1
-libtiff 4.7.2-1
+libtiff 4.7.2-2
 libtirpc 1.3.8-1
 libtommath 1.3.0-2
 libtool 2.6.2-5
@@ -684,7 +675,7 @@ lua 5.5.1-1
 lua-luarocks 3.13.0-5
 lua51-lpeg 1.1.0-5
 lua54 5.4.9-1
-luajit 2.1.1788856981+c6ffc14-1
+luajit 2.1.1791988261+2a8e017-1
 luarocks 3.13.0-5
 lv2 1.18.10-2
 lz4 1:1.10.0-2
@@ -704,7 +695,7 @@ mdadm 4.6-2
 mesa 1:26.2.4-1
 meson 1.12.1-2
 ministream 0.99.1-1
-minizip 1:1.3.2-3
+minizip 1:1.3.2-4
 mkinitcpio 42.2-1
 mkinitcpio-busybox 1.36.1-1
 mobile-broadband-provider-info 20251101-1
@@ -750,7 +741,7 @@ ocl-icd 2.3.5-1
 onetbb 2023.1.0-1
 oniguruma 6.9.10-3
 openal 1.25.2-2
-opencode 2.0.27-1
+opencode 2.0.29-1
 opencore-amr 0.1.6-2
 opencv 5.0.0-13
 openexr 3.5.2-1
@@ -763,7 +754,6 @@ openvpn 2.7.8-1
 opus 1.6.1-1
 orc 0.4.44-1
 osinfo-db 20260812-1
-ostree 2026.4-1
 p11-kit 0.26.5-1
 pacman 7.1.0.r9.g54d9411-2
 pacman-mirrorlist 20260610-1
@@ -799,7 +789,7 @@ pixman 0.46.4-1
 pkcs11-helper 1.31.0-1
 pkgconf 3.0.7-1
 playerctl 2.4.1-5
-pnpm 12.12.1-1
+pnpm 12.13.0-1
 polkit 127-3
 poppler 26.08.0-1
 poppler-data 0.4.12-2
@@ -811,7 +801,7 @@ pps-tools 1.0.3-2
 procps-ng 4.0.7-1
 protobuf 36.1-1
 proton-vpn-daemon 0.13.8-1
-proton-vpn-gtk-app 4.18.5-1
+proton-vpn-gtk-app 4.18.6-1
 psmisc 23.7-2
 python 3.14.8-1
 python-aiohappyeyeballs 2.7.1-1
@@ -822,19 +812,15 @@ python-autocommand 2.2.2-9
 python-bcc 0.37.0-2
 python-bcrypt 5.0.0-2
 python-cairo 1.29.2-1
-python-catalogus 0.1.2-1
 python-certifi 2026.07.22-1
 python-cffi 2.1.1-1
 python-charset-normalizer 3.5.1-1
 python-click 8.5.0-1
 python-colorama 0.4.6-6
-python-configobj 5.0.9-6
 python-cryptography 50.0.2-1
 python-dbus 1.5.0-1
 python-dbus-fast 5.0.22-1
 python-distro 1.9.0-4
-python-dulwich 1.2.14-1
-python-fastbencode 0.3.11-1
 python-fido2 2.2.1-1
 python-filelock 4.0.10-1
 python-frozenlist 1.8.0-2
@@ -856,18 +842,16 @@ python-markdown-it-py 4.2.0-1
 python-markupsafe 3.0.4-1
 python-mdit_py_plugins 0.6.1-1
 python-mdurl 0.1.2-9
-python-merge3 0.0.16-2
-python-more-itertools 11.1.0-1
+python-more-itertools 11.2.0-1
 python-multidict 7.0.0-1
 python-numpy 2.5.4-1
 python-packaging 26.3-1
-python-patiencediff 0.2.19-1
 python-pip 26.2.1-1
 python-platformdirs 4.13.0-1
 python-propcache 0.5.4-1
 python-proton-core 0.7.4-1
 python-proton-keyring-linux 0.2.3-1
-python-proton-vpn-api-core 5.8.3-2
+python-proton-vpn-api-core 5.8.7-1
 python-psutil 7.2.2-1
 python-pycparser 3.11-1
 python-pycups 2.0.4-4
@@ -877,7 +861,7 @@ python-pyopenssl 26.4.0-1
 python-requests 2.34.2-1
 python-rich 15.0.0-1
 python-secretstorage 3.5.0-1
-python-sentry_sdk 2.71.0-1
+python-sentry_sdk 2.72.0-1
 python-setproctitle 1.3.7-2
 python-setuptools 1:84.0.0-1
 python-textual 8.2.8-2
@@ -885,7 +869,6 @@ python-tqdm 4.70.1-1
 python-typing_extensions 4.16.0-1
 python-uc-micro-py 2.0.0-1
 python-urllib3 2.8.0-1
-python-vcsgraph 0.3.2-1
 python-wheel 0.48.0-1
 python-yaml 6.0.3-2
 python-yarl 1.25.1-1
@@ -944,7 +927,7 @@ qt5-svg 5.15.19+kde+r5-1
 qt5-tools 5.15.19+kde+r3-2
 qt5-translations 5.15.19-1
 qt5-x11extras 5.15.19-1
-qt6-base 6.12.0-2
+qt6-base 6.12.0-3
 qt6-declarative 6.12.0-1
 qt6-svg 6.12.0-1
 qt6-tools 6.12.0-1
@@ -961,8 +944,7 @@ rhash 1.4.6-1
 ripgrep 15.2.0-1
 rnnoise 1:0.2-1
 rofi 2.0.0-1
-rpmextract 1.0-11
-rsync 3.5.1-2
+rsync 3.5.1-3
 rtkit 0.14-1
 rubberband 4.0.0-2
 ruby 3.4.10-1
@@ -985,7 +967,7 @@ shaderc 2026.4-1
 shadow 4.20.0.arch1-1
 shared-mime-info 2.5.1-2
 simde 0.8.2-1
-simdjson 1:5.0.3-1
+simdjson 1:5.0.4-1
 slang 2.3.3-4
 slurp 1.5.0-2
 smartmontools 7.5-2
@@ -1153,7 +1135,7 @@ zimg 3.0.6-2
 zint 2.16.0-2
 zip 3.0-14
 zix 0.8.2-1
-zlib 1:1.3.2-3
+zlib 1:1.3.2-4
 zlib-ng 2.3.3-1
 zram-generator 1.2.1-1
 zsh 5.9.2-1

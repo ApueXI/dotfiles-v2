@@ -17,7 +17,7 @@ composer 2.10.3-1
 cups 2:2.4.20-1
 cups-pdf 3.0.3-1
 dbeaver 26.2.2-1
-discord 1:1.0.161-1
+discord 1:1.0.162-1
 dnsmasq 2.93-1
 docker 1:29.9.0-1
 docker-compose 5.6.0-1
@@ -29,11 +29,9 @@ dotnet-sdk-8.0 8.0.31.sdk131-1
 dotnet-sdk-9.0 9.0.20.sdk121-1
 edk2-ovmf 202608-1
 efibootmgr 18-4
-fastfetch 2.69.0-1
+fastfetch 2.70.0-1
 fd 10.5.0-3
 firefox 157.0.1-1
-flatpak 1:1.18.4-1
-flatpak-builder 1.4.12-1
 foliate 3.3.0-3
 fzf 0.74.5-1
 git 2.56.0-1
@@ -43,7 +41,7 @@ grim 1.5.0-2
 gst-plugin-pipewire 1:1.6.9-1
 gutenprint 5.3.5-1
 gvfs-mtp 1.62.0-3
-imagemagick 7.1.2.33-1
+imagemagick 7.1.2.34-1
 intel-media-driver 26.3.5-1
 intel-ucode 20260925-1
 iwd 3.12-2
@@ -57,7 +55,7 @@ lib32-mesa 1:26.2.4-1
 lib32-vulkan-intel 1:26.2.4-1
 libpulse 17.0+r98+gb096704c0-1
 libreoffice-fresh 26.8.1-1
-librewolf 157.0.1_1-1
+librewolf 158.0.0_1-1
 libva-intel-driver 2.4.5-1
 libvirt 1:12.8.0-1
 lightdm 1:1.33.1-1
@@ -84,7 +82,7 @@ npm 12.2.0-1
 ntfs-3g 2026.9.28-1
 obs-studio 32.2.2-1
 obsidian 1.14.4-2
-opencode 2.0.27-1
+opencode 2.0.29-1
 openvpn 2.7.8-1
 pavucontrol 1:6.2-1
 php 8.5.11-1
@@ -95,9 +93,9 @@ pipewire 1:1.6.9-1
 pipewire-alsa 1:1.6.9-1
 pipewire-jack 1:1.6.9-1
 pipewire-pulse 1:1.6.9-1
-pnpm 12.12.1-1
+pnpm 12.13.0-1
 postgresql 18.6-2
-proton-vpn-gtk-app 4.18.5-1
+proton-vpn-gtk-app 4.18.6-1
 python-pip 26.2.1-1
 qbittorrent 5.2.4-1
 qemu-desktop 11.1.2-1

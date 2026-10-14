@@ -173,6 +173,9 @@ alias autofister="mpv --fs /home/cred/autofister_unarchived_karaoke.mp4"
 # clear all mako notifs
 alias makocls="makoctl dismiss -a"
 
+# init my aisley work space
+alias aisleyInit="/home/cred/.local/bin/init-aisley-work.sh"
+
 export EDITOR=nvim
 function y() {
   local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd

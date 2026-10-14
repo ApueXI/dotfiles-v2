@@ -1,5 +1,6 @@
-session_name: aisley-flutter
-start_directory: /home/cred/coding/aisley_app/
+session_name: aisley-webapp
+start_directory: /home/cred/coding/aisley-workplace/aisley/
+# start_directory: /home/cred/coding/aisley
 
 windows:
   - window_name: vibe code
@@ -17,7 +18,7 @@ windows:
   - window_name: QA
     panes:
       - shell_command:
-          - cmd: codex resume 01a0ff49-9bf5-7a92-a62e-c5c694e7c950
+          - cmd: codex resume
             enter: false
 
   - window_name: file manager
@@ -52,7 +53,7 @@ windows:
     layout: even-horizontal
     panes:
       - focus: true
-      - start_directory: /home/cred/coding/aisley_app/android/
+      - start_directory: /home/cred/coding/aisley-workplace/aisley/src/api
 
   - window_name: misc
     panes:
