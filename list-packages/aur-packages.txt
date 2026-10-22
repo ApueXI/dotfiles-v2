@@ -1,5 +1,5 @@
 bruno-bin 4.2.1-1
-floorp-bin 12.20.1-1
+floorp-bin 12.20.2-1
 neovim-git-debug 0.12.0.r1850.g99e8b61376-1
 onlyoffice-bin 10.0.0-1
 packettracer 9.0.1-1

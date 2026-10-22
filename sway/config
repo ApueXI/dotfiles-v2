@@ -126,7 +126,7 @@ exec wl-paste --type image --watch cliphist store
     bindsym $mod+b+l exec kitty -e bluetui
 
     # Screen shot a limited area
-    bindsym Print exec grim  ~/Pictures/screenshots/$(date '+%Y-%m-%d_%H-%M').png
+    bindsym Print exec sh -c 'file=~/Pictures/screenshots/$(date "+%Y-%m-%d_%H-%M-%S-%3N").png; grim "$file" && notify-send -t 1000 "Screenshot taken" "Saved to ~/Pictures/screenshots"'
 
     # Screen shot whole screen and copy to clipboard
     # bindsym alt+u exec grim  ~/Pictures/screenshots/$(date '+%Y-%m-%d_%H-%M-%S').png

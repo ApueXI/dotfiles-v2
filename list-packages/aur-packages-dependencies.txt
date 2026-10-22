@@ -2,7 +2,7 @@ bruno-bin 4.2.1-1
 bruno-bin-debug 4.2.1-1
 bruno-debug 3.2.0-1
 clipse-debug 1.2.1-1
-floorp-bin 12.20.1-1
+floorp-bin 12.20.2-1
 httpdirfs-debug 1.2.7-2
 httpfs2-2gbplus-debug 0.1.5-1
 lib32-audit 4.2.1-1
