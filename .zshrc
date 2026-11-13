@@ -146,19 +146,19 @@ alias reflector_spd_save='reflector --sort rate --age 96 --ipv4 --protocol https
 # Extract stuff into dedicated folder
 alias extract='7z x -o/home/cred/stuff-extracted'
 # Zip file/folder, give the extact directory
-alias pyzip='python /home/cred/python_scripts/zipping.py'
+alias pyzip='/home/cred/python_scripts/zipping.py'
 
 # Generate python secrets
-alias gen_pysecrets='python /home/cred/python_scripts/gen_secrets.py'
+alias gen_pysecrets='/home/cred/python_scripts/gen_secrets.py'
 
 # Give random ln from /home/cred/Light_Novel
-alias random_ln="python /home/cred/python_scripts/random_ln.py"
+alias rln="/home/cred/python_scripts/random_ln.py"
 
 # Copy to clipboard the current directory
 alias cpwd='pwd | wl-copy'
 
 # Shutdown in x minutes
-alias timed_shutdown='python /home/cred/python_scripts/shutdown.py'
+alias timed_shutdown='/home/cred/python_scripts/shutdown.py'
 
 
 # See packages and put them in a .txt file
@@ -176,6 +176,23 @@ alias makocls="makoctl dismiss -a"
 # init my aisley work space
 alias aisleyInit="/home/cred/.local/bin/init-aisley-work.sh"
 
+# copy the apk file for both flutter mobile app of AISLEY then rename it to aisley-WHAT-release.apk
+# alias aisleyAPK='
+# cp /home/cred/coding/aisley-workplace/aisley_app/build/app/outputs/flutter-apk/app-release.apk /home/cred/coding/aisley-workplace/APK/aisley-courier-release.apk &&
+# cp /home/cred/coding/aisley-workplace/aisley_mobile_buyer/build/app/outputs/flutter-apk/app-release.apk /home/cred/coding/aisley-workplace/APK/aisley-customer-release.apk
+# '
+
+# copy the apk file for both flutter mobile app of AISLEY then rename it to aisley-WHAT-release.apk
+aisleyAPK() {
+    local base="/home/cred/coding/aisley-workplace"
+
+    cp "$base/aisley_app/build/app/outputs/flutter-apk/app-release.apk" \
+       "$base/APK/aisley-courier-release.apk" &&
+
+    cp "$base/aisley_mobile_buyer/build/app/outputs/flutter-apk/app-release.apk" \
+       "$base/APK/aisley-customer-release.apk"
+}
+
 export EDITOR=nvim
 function y() {
   local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
@@ -191,3 +208,6 @@ export PATH="$HOME/develop/flutter/bin:$PATH"
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 export ANDROID_HOME="$HOME/Android/Sdk"
 export PATH="$JAVA_HOME/bin:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$PATH"
+
+# Enable fzf keybindings and fuzzy completion
+source <(fzf --zsh)

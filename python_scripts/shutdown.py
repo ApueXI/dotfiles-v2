@@ -1,5 +1,6 @@
-import time
+#!/usr/bin/env python
 import subprocess
+import time
 
 
 def ask_time() -> int:
