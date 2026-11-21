@@ -1,0 +1,33 @@
+
+
+# Default appearance
+background-color=#f2ecbc
+text-color=#545464
+border-color=#624c83
+progress-color=over #4d699b
+
+# borders
+border-size=2
+border-radius=10
+
+# Low - Subtle Stone
+[urgency=low]
+background-color=#ddd8d0
+text-color=#625f69
+border-color=#a09a91
+border-size=1
+
+# Normal - Lotus Light
+[urgency=normal]
+background-color=#f2ecbc
+text-color=#545464
+border-color=#624c83
+# border-size=2
+
+# Critical - Sakura Red
+[urgency=critical]
+background-color=#e5c2b8
+text-color=#763c44
+border-color=#c84053
+border-size=2
+# default-timeout=0

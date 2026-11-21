@@ -12,24 +12,24 @@ projector with **Arch Linux + Sway**:
 > provide true screen mirroring on Sway. Use `wl-mirror` when you want
 > the HDMI display to show the same content as your laptop screen.
 
-------------------------------------------------------------------------
+---
 
 ## 1. Install the Required Applications
 
 Install both packages:
 
-``` bash
+```bash
 sudo pacman -S wdisplays wl-mirror
 ```
 
 You can verify that they are installed with:
 
-``` bash
+```bash
 wdisplays --help
 wl-mirror --help
 ```
 
-------------------------------------------------------------------------
+---
 
 # Part 1 --- Using wdisplays for an HDMI Monitor
 
@@ -38,7 +38,7 @@ Use `wdisplays` when you want your HDMI monitor to act as an
 
 For example:
 
-``` text
+```text
 Laptop screen                HDMI monitor
 ┌─────────────────┐          ┌─────────────────┐
 │                 │          │                 │
@@ -58,31 +58,31 @@ Sway should detect the new output automatically.
 
 You can check detected outputs with:
 
-``` bash
+```bash
 swaymsg -t get_outputs
 ```
 
 Typical output names are:
 
-``` text
+```text
 eDP-1
 HDMI-A-1
 ```
 
 Usually:
 
--   `eDP-1` = laptop screen
--   `HDMI-A-1` = HDMI display
+- `eDP-1` = laptop screen
+- `HDMI-A-1` = HDMI display
 
 Your actual names may be different.
 
-------------------------------------------------------------------------
+---
 
 ## Step 2 --- Open wdisplays
 
 Run:
 
-``` bash
+```bash
 wdisplays
 ```
 
@@ -90,7 +90,7 @@ A graphical display configuration window should appear.
 
 You should see boxes representing your laptop display and HDMI display.
 
-------------------------------------------------------------------------
+---
 
 ## Step 3 --- Enable the HDMI Display
 
@@ -100,16 +100,16 @@ Make sure the display is enabled.
 
 You can then configure settings such as:
 
--   Resolution
--   Refresh rate
--   Scale
--   Rotation
--   Position
+- Resolution
+- Refresh rate
+- Scale
+- Rotation
+- Position
 
 For example, you can place the HDMI monitor to the right of your laptop
 screen:
 
-``` text
+```text
 ┌───────────────┐┌─────────────────────┐
 │    Laptop     ││        HDMI         │
 │     eDP-1     ││      HDMI-A-1       │
@@ -119,7 +119,7 @@ screen:
 Drag the monitor boxes in `wdisplays` so that they match the physical
 arrangement of your monitors.
 
-------------------------------------------------------------------------
+---
 
 ## Step 4 --- Apply the Configuration
 
@@ -130,7 +130,7 @@ and HDMI displays.
 
 For example, if HDMI is positioned to the right:
 
-``` text
+```text
 Laptop
    │
    │ move mouse →
@@ -143,19 +143,19 @@ shortcuts or commands.
 
 For example:
 
-``` bash
+```bash
 swaymsg move container to output HDMI-A-1
 ```
 
 Replace `HDMI-A-1` with your actual HDMI output name.
 
-------------------------------------------------------------------------
+---
 
 # Part 2 --- Duplicating the Laptop Screen with wl-mirror
 
 If you want this:
 
-``` text
+```text
 Laptop screen
 ┌─────────────────────┐
 │                     │
@@ -177,13 +177,13 @@ use `wl-mirror`.
 
 This is useful for:
 
--   Projectors
--   Classroom presentations
--   TVs
--   Demonstrations
--   Showing someone exactly what is on your laptop
+- Projectors
+- Classroom presentations
+- TVs
+- Demonstrations
+- Showing someone exactly what is on your laptop
 
-------------------------------------------------------------------------
+---
 
 ## Step 1 --- Connect HDMI
 
@@ -191,25 +191,25 @@ Connect your HDMI monitor/projector.
 
 Check the available outputs:
 
-``` bash
+```bash
 swaymsg -t get_outputs
 ```
 
 Assume the result contains:
 
-``` text
+```text
 eDP-1
 HDMI-A-1
 ```
 
 where:
 
-``` text
+```text
 eDP-1       = laptop
 HDMI-A-1    = HDMI monitor/projector
 ```
 
-------------------------------------------------------------------------
+---
 
 ## Step 2 --- Make Sure the HDMI Output Is Enabled
 
@@ -217,23 +217,23 @@ You can use `wdisplays` to enable the HDMI output.
 
 Alternatively:
 
-``` bash
+```bash
 swaymsg output HDMI-A-1 enable
 ```
 
-------------------------------------------------------------------------
+---
 
 ## Step 3 --- Mirror the Laptop Screen
 
 Run:
 
-``` bash
-wl-mirror eDP-1 --fullscreen-output HDMI-A-1
+```bash
+wl-mirror --fullscreen-output HDMI-A-2 eDP-1
 ```
 
 This means:
 
-``` text
+```text
 Source:       eDP-1
                  │
                  │ wl-mirror
@@ -244,30 +244,30 @@ Destination:  HDMI-A-1
 Your laptop remains your normal working display while `wl-mirror`
 displays a copy of it fullscreen on the HDMI output.
 
-------------------------------------------------------------------------
+---
 
 ## Step 4 --- Stop Mirroring
 
 To stop `wl-mirror`, return to the terminal where it is running and
 press:
 
-``` text
+```text
 Ctrl + C
 ```
 
 If it is running in the background, you can stop it with:
 
-``` bash
+```bash
 pkill wl-mirror
 ```
 
-------------------------------------------------------------------------
+---
 
 # Recommended Workflow
 
 For normal extended-monitor usage:
 
-``` text
+```text
 Plug HDMI
    │
    ▼
@@ -288,7 +288,7 @@ Use laptop + HDMI as separate displays
 
 For presentations or duplicated-screen usage:
 
-``` text
+```text
 Plug HDMI
    │
    ▼
@@ -304,7 +304,7 @@ Run wl-mirror
 Laptop screen is duplicated onto HDMI
 ```
 
-------------------------------------------------------------------------
+---
 
 # Optional --- Create a One-Command Mirror Script
 
@@ -313,13 +313,13 @@ script.
 
 Create:
 
-``` text
+```text
 ~/.local/bin/mirror-hdmi
 ```
 
 Add:
 
-``` bash
+```bash
 #!/usr/bin/env bash
 
 LAPTOP="eDP-1"
@@ -339,41 +339,41 @@ Change `eDP-1` and `HDMI-A-1` if your output names are different.
 
 Make the script executable:
 
-``` bash
+```bash
 chmod +x ~/.local/bin/mirror-hdmi
 ```
 
 Now you can start mirroring with:
 
-``` bash
+```bash
 mirror-hdmi
 ```
 
-------------------------------------------------------------------------
+---
 
 # Optional --- Add a Sway Shortcut
 
 Open your Sway configuration:
 
-``` text
+```text
 ~/.config/sway/config
 ```
 
 Add:
 
-``` text
+```text
 bindsym $mod+m exec ~/.local/bin/mirror-hdmi
 ```
 
 Reload Sway:
 
-``` bash
+```bash
 swaymsg reload
 ```
 
 Now your workflow can be:
 
-``` text
+```text
 Plug HDMI
     ↓
 Super + M
@@ -383,7 +383,7 @@ Laptop screen mirrored to HDMI
 
 > `$mod` is commonly configured as the Super/Windows key in Sway.
 
-------------------------------------------------------------------------
+---
 
 # Troubleshooting
 
@@ -391,23 +391,23 @@ Laptop screen mirrored to HDMI
 
 Check:
 
-``` bash
+```bash
 swaymsg -t get_outputs
 ```
 
 If the HDMI output exists but is disabled:
 
-``` bash
+```bash
 swaymsg output HDMI-A-1 enable
 ```
 
 Then open:
 
-``` bash
+```bash
 wdisplays
 ```
 
-------------------------------------------------------------------------
+---
 
 ## `wl-mirror` Says the Output Does Not Exist
 
@@ -415,20 +415,20 @@ Your output probably has a different name.
 
 Run:
 
-``` bash
+```bash
 swaymsg -t get_outputs
 ```
 
 Then replace:
 
-``` text
+```text
 eDP-1
 HDMI-A-1
 ```
 
 with the names reported by your system.
 
-------------------------------------------------------------------------
+---
 
 ## Mirroring the Wrong Display
 
@@ -436,24 +436,24 @@ The first output passed to `wl-mirror` is the display being captured.
 
 For example:
 
-``` bash
+```bash
 wl-mirror eDP-1 --fullscreen-output HDMI-A-1
 ```
 
 means:
 
-``` text
+```text
 eDP-1 → HDMI-A-1
 Laptop → HDMI
 ```
 
-------------------------------------------------------------------------
+---
 
 ## HDMI Has the Wrong Resolution
 
 Open:
 
-``` bash
+```bash
 wdisplays
 ```
 
@@ -462,46 +462,49 @@ monitor/projector.
 
 You can also inspect available modes using:
 
-``` bash
+```bash
 swaymsg -t get_outputs
 ```
 
-------------------------------------------------------------------------
+---
 
 # Quick Reference
 
-  ------------------------------------------------------------------------------------------------
-  Goal                    Tool                    Command
-  ----------------------- ----------------------- ------------------------------------------------
-  Graphically configure   wdisplays               `wdisplays`
-  displays                                        
+---
 
-  List detected displays  Sway                    `swaymsg -t get_outputs`
+Goal Tool Command
 
-  Enable HDMI             Sway                    `swaymsg output HDMI-A-1 enable`
+---
 
-  Extended desktop        wdisplays               Arrange displays and click Apply
+Graphically configure wdisplays `wdisplays`
+displays
 
-  Duplicate laptop to     wl-mirror               `wl-mirror eDP-1 --fullscreen-output HDMI-A-1`
-  HDMI                                            
+List detected displays Sway `swaymsg -t get_outputs`
 
-  Stop mirroring          wl-mirror               `pkill wl-mirror`
+Enable HDMI Sway `swaymsg output HDMI-A-1 enable`
 
-  Reload Sway config      Sway                    `swaymsg reload`
-  ------------------------------------------------------------------------------------------------
+Extended desktop wdisplays Arrange displays and click Apply
 
-------------------------------------------------------------------------
+Duplicate laptop to wl-mirror `wl-mirror eDP-1 --fullscreen-output HDMI-A-1`
+HDMI
+
+Stop mirroring wl-mirror `pkill wl-mirror`
+
+Reload Sway config Sway `swaymsg reload`
+------------------------------------------------------------------------------------------------
+
+---
 
 # Suggested Setup
 
 For an **Arch + Sway laptop**, a practical setup is:
 
--   Use **wdisplays** whenever you want to configure, position, or
-    extend displays.
--   Use **wl-mirror** whenever you want to duplicate the laptop screen
-    for a TV, monitor, or projector.
--   Create `~/.local/bin/mirror-hdmi` if you mirror frequently.
--   Bind the script to `$mod+m` for quick presentation mode.
+- Use **wdisplays** whenever you want to configure, position, or
+  extend displays.
+- Use **wl-mirror** whenever you want to duplicate the laptop screen
+  for a TV, monitor, or projector.
+- Create `~/.local/bin/mirror-hdmi` if you mirror frequently.
+- Bind the script to `$mod+m` for quick presentation mode.
 
 This gives you both a GUI for normal monitor management and a simple
 command/shortcut for true screen duplication.

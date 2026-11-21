@@ -295,7 +295,7 @@ bar {
 }
 
 # Window titlebar styling
-font pango:JetBrains Mono 12
+font pango:JetBrains Mono bold 12
 
 title_align center
 titlebar_padding 8 5
