@@ -27,6 +27,10 @@
     }
   },
 
+  "sway/window": {
+    "max-length": 25
+  },
+
   // Current player (music, a browser video...); hidden when nothing plays. Click: play/pause
   "mpris": {
     "format": "{player_icon} {dynamic}",
@@ -34,8 +38,8 @@
     "dynamic-order": ["title", "artist"],
     // dynamic-len drops a tag that doesn't fit instead of cutting it, so the title gets its own
     // limit: a long video title is cut with "…" and the artist goes when there's no room
-    "title-len": 30,
-    "dynamic-len": 32,
+    "title-len": 20,
+    "dynamic-len": 25,
     "player-icons": {
       "default": "󰝚",
       "chromium": "󰊯",
@@ -146,7 +150,7 @@
       "children-class": "system-child",
       "transition-left-to-right": false
     },
-    "modules": ["cpu", "memory", "temperature", "power-profiles-daemon", "idle_inhibitor"]
+    "modules": [ "memory", "idle_inhibitor", "temperature", "cpu", "power-profiles-daemon"]
   },
 
   "cpu": {
@@ -224,15 +228,16 @@
   },
 
   "network": {
-    "format-wifi": "{icon}",
+    "format-wifi": "{icon} {essid} ({signalStrength}%)",
     "format-ethernet": "󰈀",
     "format-disconnected": "󰤮",
     "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
     "tooltip-format-wifi": "{essid} ({signalStrength}%)\nIP: {ipaddr}\nUp: {bandwidthUpBits}  Down: {bandwidthDownBits}",
     "tooltip-format-ethernet": "{ifname}\nIP: {ipaddr}\nUp: {bandwidthUpBits}  Down: {bandwidthDownBits}",
     "tooltip-format-disconnected": "Disconnected",
-    "on-click": "nm-connection-editor",
-    "on-click-right": "alacritty -e nmtui"
+    "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    //"on-click": "nm-connection-editor",
+    "on-click-right": "kitty -e nmtui"
   },
 
   "battery": {
