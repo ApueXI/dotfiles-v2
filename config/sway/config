@@ -294,4 +294,18 @@ bar {
     }
 }
 
+# Window titlebar styling
+font pango:JetBrains Mono 12
+
+title_align center
+titlebar_padding 8 5
+titlebar_border_thickness 1
+
+# Colors
+#              border    background text      indicator child_border
+client.focused #7E9CD8    #1F1F28    #DCD7BA   #7E9CD8   #7E9CD8
+client.focused_inactive #363646 #2A2A37 #727169 #363646 #363646
+client.unfocused #363646 #16161D #727169 #363646 #363646
+client.urgent #E82424 #E82424 #FFFFFF #E82424 #E82424
+
 include /etc/sway/config.d/*
