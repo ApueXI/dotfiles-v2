@@ -51,9 +51,10 @@ window#waybar {
 /* The center is a darker ink slab with soft corners, framed like the strips */
 .modules-center {
   background-color: alpha(@bg-dark, 0.92);
-  border: 1px solid alpha(@border, 0.45);
+  /* border: 1px solid alpha(@border, 0.45); */
+  border: 1px solid #7e9cd8;
   border-radius: 12px;
-  padding: 0 8px;
+  padding: 0 25px;
 }
 
 /* --- Modules --- */

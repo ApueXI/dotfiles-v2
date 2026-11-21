@@ -28,7 +28,7 @@
   },
 
   "sway/window": {
-    "max-length": 25
+    "max-length": 40
   },
 
   // Current player (music, a browser video...); hidden when nothing plays. Click: play/pause
@@ -68,7 +68,7 @@
     "format-alt": "{:%B %d %Y}",
     "tooltip-format": "\n<span size='15pt' font='Monospace 9'>{calendar}</span>",
     "calendar": {
-      "mode": "year",
+      "mode": "month",
       "mode-mon-col": 3,
       "weeks-pos": "right",
       "on-scroll": 1,

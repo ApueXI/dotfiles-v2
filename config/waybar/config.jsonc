@@ -11,10 +11,19 @@
   "margin-right": 12,
   "spacing": 0,
 
-  "modules-left": ["sway/workspaces", "sway/window", "mpris" ],
-  // "custom/cava"
+  "modules-left": [
+    "sway/workspaces",  
+    "clock"
+    // "sway/window"
+    // "mpris",
+    // "custom/cava"
+  ],
 
-  "modules-center": ["custom/weather", "clock"],
+  "modules-center": [
+    // "custom/weather",
+    // "clock"
+    "sway/window"
+  ],
 
   "modules-right": [
     "privacy",

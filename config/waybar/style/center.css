@@ -11,7 +11,7 @@
 #clock {
   color: @text;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 15px;
   padding: 0 10px;
   /* Tapered carp-yellow brush stroke under the time */
   background-image: linear-gradient(
