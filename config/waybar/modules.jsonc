@@ -150,7 +150,7 @@
       "children-class": "system-child",
       "transition-left-to-right": false
     },
-    "modules": [ "memory", "idle_inhibitor", "temperature", "cpu", "power-profiles-daemon"]
+    "modules": [ "backlight", "memory", "temperature", "cpu", "idle_inhibitor", "power-profiles-daemon"]
   },
 
   "cpu": {

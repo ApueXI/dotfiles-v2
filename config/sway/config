@@ -307,8 +307,16 @@ bar {
 # client.unfocused #363646 #16161D #727169 #363646 #363646
 # client.urgent #E82424 #E82424 #FFFFFF #E82424 #E82424
 
-# Remove titlebar, keep a 2px border
+# Minimal window decorations
 default_border pixel 2
 default_floating_border pixel 2
+# Minimize tabbed/stacking titlebars
+font pango:JetBrains Mono Bold 1
+title_align right
+titlebar_padding 1 1
+titlebar_border_thickness 0
+
+# Hide titlebar when only one window
+# hide_edge_borders --i3 none
 
 include /etc/sway/config.d/*

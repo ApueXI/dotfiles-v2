@@ -13,7 +13,7 @@ while true; do
   # Change 2: Use -ge (Greater than or Equal)
   if [ "$STATUS" = "charging" ] || [ "$STATUS" = "Not charging" ] || [ "$STATUS" = "Full" ]; then
     if [ "$CAPACITY" -ge "$NOTIFY_THRESHOLD" ]; then
-      notify-send -u critical -a "System" "Battery Charged" "Battery is at $CAPACITY%. You can unplug now."
+      notify-send -u low -a "System" "Battery Charged" "Battery is at $CAPACITY%. You can unplug now."
     fi
   fi
 
