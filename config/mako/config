@@ -1,10 +1,11 @@
-
-
 # Default appearance
 background-color=#f2ecbc
 text-color=#545464
 border-color=#624c83
 progress-color=over #4d699b
+
+# Font
+font=JetBrains Mono 12
 
 # borders
 border-size=2

@@ -28,5 +28,6 @@
     count-all = rev-list --count --all
 [color]
   ui = auto
+  diff = auto
 [init]
 	defaultBranch = main
